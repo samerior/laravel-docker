@@ -8,7 +8,7 @@ Using the Laravel installer you can get up and running with a Laravel applicatio
 
 - Create a new Laravel application `$ laravel new app`
 - Change to the applications directory `$ cd app`
-- Start the container and attach the application. `$ docker run -d -p 8080:80 --name=testapp -v $PWD:/var/www samerior/laravel-docker`
+- Start the container and attach the application. `$ docker run -d -p 8080:80 --name=testapp -v $PWD:/var/www samerior/laravel-webserver`
 - Visit the Docker container URL like [http://0.0.0.0:8080](http://0.0.0.0:8080). Profit!
 
 ### Args
@@ -29,7 +29,6 @@ Here are some configurable environment values.
 - `WEBROOT_PUBLIC` – Path to the web root. Default: `/var/www/public`
 - `COMPOSER_DIRECTORY` - Path to the `composer.json` containing directory. Default: `/var/www`.
 - `COMPOSER_UPDATE_ON_BUILD` - Should `composer update` run on build. Default: `0`.
-- `LARAVEL_APP` - Is this a Laravel application. Default `0`.
 - `RUN_LARAVEL_SCHEDULER` - Should the Laravel scheduler command run. Only works if `LARAVEL_APP` is `1`. Default: `0`.
 - `RUN_LARAVEL_MIGRATIONS_ON_BUILD` - Should the migrate command run during build. Only works if `LARAVEL_APP` is `1`. Default: `0`.
 - `PRODUCTION` – Is this a production environment. Default: `0`
