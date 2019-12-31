@@ -34,6 +34,7 @@ RUN apk add --no-cache --update php-fpm \
     php-phar \
     php-session \
     php-pcntl \
+    php-posix \
     php-zip \
     php-redis \
     php-dom \
