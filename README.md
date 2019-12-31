@@ -11,6 +11,17 @@ This includes:
  - Supervisord 
  - Composer
 
+## Tags
+
+### latest
+ This tag contains base webserver with no cron setups for queues or horizon
+
+### horizon
+ This tag contains supervisor configuration for horizon
+
+### queues
+This tag contains supervisor configuration for the default queues
+
 # Laravel Application - Quick Run
 
 Using the Laravel installer you can get up and running with a Laravel application inside Docker in minutes.
