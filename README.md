@@ -1,6 +1,6 @@
 # Web Server
 
-(View On Github)[https://github.com/samerior/laravel-docker]
+[View On Github](https://github.com/samerior/laravel-docker)
 Nginx & PHP 7 web server.
 
 ## Build 
