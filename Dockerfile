@@ -33,6 +33,9 @@ RUN apk add --no-cache --update php-fpm \
     php-mbstring \
     php-phar \
     php-session \
+    php-pcntl \
+    php-zip \
+    php-redis \
     php-dom \
     php-curl \
     php-ctype \
