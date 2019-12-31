@@ -19,7 +19,7 @@ fi
 # RUN LARAVEL MIGRATIONS ON BUILD.
 if [[ "${RUN_LARAVEL_MIGRATIONS_ON_BUILD}" == "1" ]]; then
     cd ${WEBROOT}
-    php artisan migrate
+    php artisan migrate --force
 fi
 
 # LARAVEL SCHEDULER
