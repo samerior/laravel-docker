@@ -22,6 +22,11 @@ if [[ "${RUN_LARAVEL_MIGRATIONS_ON_BUILD}" == "1" ]]; then
     php artisan migrate --force
 fi
 
+# RUN LARAVEL MIGRATIONS ON BUILD.
+if [[ "${RUN_LARAVEL_PASSPORT_INSTALL}" == "1" ]]; then
+    cd ${WEBROOT}
+    php artisan passport:install --force
+fi
 # LARAVEL SCHEDULER
 if [[ "${RUN_LARAVEL_SCHEDULER}" == "1" ]]; then
     echo '* * * * * cd /var/www && php artisan schedule:run >> /dev/null 2>&1' > /etc/crontabs/root
